@@ -29,7 +29,8 @@ function startQuiz() {
     }, 1000);
     alert("Begin game")
     //aler("i started the game");
-    createButtons(0)
+
+    createButtons(0);
     //bring up question
 
 
@@ -64,7 +65,6 @@ function createButtons(index) {
     questionSection.appendChild(buttonFour);
 }
 
-startQuizbtn.addEventListener("click", startQuiz);
 
 questionSection.addEventListener("click", function (event) {
     console.log(event);
@@ -92,8 +92,20 @@ questionSection.addEventListener("click", function (event) {
 }
 )
 
-//executables
+function enterScore() {
+    let initials = document.querySelector("#initials").value;
+    let userScore = {
+        initials: initials,
+        score: score,
+    };
+    scores.push(userScore);
+    scores.localStorage.setItem
 
+}
+
+//executables
+startQuizbtn.addEventListener("click", startQuiz);
+saveScore.addEventListener("click", enterScore);
 //documents
 
 
