@@ -14,7 +14,7 @@ body {
 
 /* ids */
 #questions {
-    display: none;
+    flex: auto;
 }
 
 #startQuiz {
@@ -35,3 +35,9 @@ body {
 .b-rad-4 {
     border-radius: 4px;
 }
+
+.hidden {
+    display: none;
+}
+
+.highscores
