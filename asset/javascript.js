@@ -1,9 +1,55 @@
 //global variables
 let now = new Date().now();
 let endTime = now.setInterval();
+let questions = [
+    { title: ["This is the first question"], choices: ["hi", "how", "are", "you"], answer: ["hi"] },
+    { title: ["This is the first question"], choices: ["hi", "how", "are", "you"], answer: ["hi"] },
+
+]
 
 let t = deadline - now;
 //functions
+function startQuiz() {
+    //aler("i started the game");
+
+    //bring up question
+    let title = document.createElement("h2");
+    title.textContent = questions[0].choices[0];
+    qDiv.appendChild(title);
+
+    let buttonOne = document.createElement("button");
+    buttonOne.textContent = questions[0].choices[0];
+    buttonOne.dataset.answer = questions[0].answer;
+    qDiv.appendChild(buttonOne);
+
+    let buttonTwo = document.createElement("button");
+    buttonTwo.textContent = questions[0].choices[1];
+    buttonTwo.dataset.answer = questions[0].answer;
+    qDiv.appendChild(buttonTwo);
+
+    let buttonThree = document.createElement("button");
+    buttonThree.textContent = questions[0].choices[2];
+    buttonThree.dataset.answer = questions[0].answer;
+    qDiv.appendChild(buttonThree);
+
+    let buttonFour = document.createElement("button");
+    buttonFour.textContent = questions[0].choices[3];
+    buttonFour.dataset.answer = questions[0].answer;
+    qDiv.appendChild(buttonFour);
+
+    //make clickable
+}
+
+
+startQuizbtn.addEventListener("click", startQuiz);
+
+questions.addEventListener("click", function (event) {
+    console.log(event.target)
+    if (choices === answer) { Score++; }
+    //go to next question
+}
+)
+
 let timer = setInterval(function () {
     let now = newDate().getTime();
     let t = endDate - now;
