@@ -9,9 +9,9 @@ let questions = [
     { title: ["Which of the below options is not a language we have coded in?"], choices: ["python", "css", "html", "javascript"], answer: ["python"] },
     { title: ["What is the correct character to use when calling IDs?"], choices: [".", "!", "4", "#"], answer: ["#"] },
     { title: ["what language, now deprecated, allowed coders to quickly set up websites with out-of-the-box designs?"], choices: ["python", "jquery", "tailwind", "css"], answer: ["jquery"] },
-    { title: ["This is the fourth question"], choices: ["a", "b", "c", "d"], answer: ["c"] },
-    { title: ["This is the fifth question"], choices: ["a", "b", "c", "d"], answer: ["b"] },
-    { title: ["This is the sixth question"], choices: ["a", "b", "c", "d"], answer: ["b"] },
+    { title: ["What part of the Web stacka are we focusing on now?"], choices: ["Back End", "Middle Part", "Front End", "Server Side"], answer: ["Front End"] },
+    { title: ["What is the name of the CSS plugin tool Scott recommend we use?"], choices: ["Talon css", "Tailwinds", "Joker", "JQuery"], answer: ["Tailwinds"] },
+    { title: ["What syntax do you use to indicate you want to use part of an html page as input?"], choices: ["queryListener", "querySelector", "eventListener", "getItem"], answer: ["querySelector"] },
 ];
 let questionsIndex = 1;
 let timerDiv = document.querySelector("#timer");
